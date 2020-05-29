@@ -11,11 +11,61 @@
       crossorigin="anonymous"
     />
   </head>
+  <link rel="stylesheet" href="css/popup.css" />
   <body>
+    <!-- inicio-button -->
     <div class="container">
-      <h1>oi</h1>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-5">
+          <button
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#siteModal"
+          >
+            Show Modal
+          </button>
+        </div>
+      </div>
     </div>
-    a
+    <!-- fim-button -->
+
+    <div
+      class="modal fade modal-radius"
+      id="siteModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="p-3">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <div class="alignTruckCenter">
+            <img src="assets/dokTruck.png" class="" alt="Dok Truck" />
+          </div>
+          <div class="text-center">
+            <h3 class="mt-4">Eii tudo bem?</h3>
+            <h4>Notamos que seu veículo está vinculado ao CNPJ.</h4>
+            <p>
+              O DOK Despachante é referência no mercado B2B e pode te ajudar a
+              gerenciar sua frota sendo ela Empresa ou Transportadora com
+              <a href="/" class="a-green">menor custo</a> para seu negócio.
+            </p>
+            <h4>Tem interesse de uma proposta?</h4>
+            <div>
+              <button class="btn-green mt-3 mb-4">Sim, Claro!</button>
+            </div>
+            <a href="" class="a-blue">Não, Obrigado.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim-modal -->
+
+    <!-- Vertically centered scrollable modal -->
 
     <!-- SCRIPTS -->
     <script
@@ -33,5 +83,8 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#siteModal").modal("show");
+    </script>
   </body>
 </html>
